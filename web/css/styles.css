@@ -1,0 +1,103 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration: none !important;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: Inter, sans-serif !important;
+}
+
+.button {
+    display: inline-flex;
+    padding: 6px 40px;
+    justify-content: center;
+    height: 46px;
+    align-items: center;
+    gap: 8px;
+    color: white;;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    cursor: pointer;
+    /* Button S */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    width: 100%;
+}

@@ -1,5 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%> <%@taglib prefix="b"
-uri="/WEB-INF/tlds/buttonTags" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <head>
@@ -7,7 +6,7 @@ uri="/WEB-INF/tlds/buttonTags" %>
   <title>E-Commerce</title>
 
   <!--CSS-->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"

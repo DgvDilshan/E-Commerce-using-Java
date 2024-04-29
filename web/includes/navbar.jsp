@@ -1,4 +1,3 @@
-<%@taglib prefix="b" uri="/WEB-INF/tlds/buttonTags" %>
 <nav>
   <div class="container">
     <div class="nav-wrapper">

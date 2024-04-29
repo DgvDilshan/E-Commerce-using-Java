@@ -27,6 +27,7 @@
   <header class="header">
       <%@include file="includes/navbar.jsp" %>
       <%@include file="includes/searchbar.jsp" %>
+      
   </header>
 
   <script

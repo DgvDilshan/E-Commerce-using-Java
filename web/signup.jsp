@@ -7,7 +7,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/signInAndSignup.css">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -1,0 +1,122 @@
+/* CSS Styles for the Shopping Cart Interface */
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Root Variables */
+:root {
+    --accent-color: #069fe6;
+    --light-gray: rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Body Styles */
+body {
+    min-height: 100vh;
+    background-color: #f0ebeb;
+    overflow: hidden;
+}
+
+/* Open Cart Button */
+#open_cart_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Items Container */
+.items {
+    padding: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Side Cart Styles */
+.sidecart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: -10px 0 15px var(--light-gray);
+    z-index: 2;
+    transform: translateX(110%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Cart Content Styles */
+.cart_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cart Header Styles */
+.cart_header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Title Styles */
+.header_title {
+    position: relative;
+}
+
+/* Close Button Styles */
+.cart_header .close_btn {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Backdrop Styles */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show Backdrop */
+.backdrop.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Side Cart Open Animation */
+.sidecart.open {
+    transform: translateX(0);
+}
+

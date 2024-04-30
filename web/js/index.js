@@ -74,7 +74,7 @@ function signUp(){
         success: function (response) {
             alert(response);
             if(response === "Successfully Registered"){
-                window.location.href = "index.jsp";
+                window.location.href = "signin.jsp";
             }
 
         },

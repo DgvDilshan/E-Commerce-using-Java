@@ -1,0 +1,22 @@
+/*Shop Page*/
+.container {
+    position: relative;
+}
+
+#hero-shop {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1, p {
+    margin-bottom: 20px;
+}
+

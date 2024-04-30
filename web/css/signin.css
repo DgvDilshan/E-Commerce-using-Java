@@ -1,0 +1,79 @@
+.logo {
+    position: absolute;
+    top: 20px;
+    margin-left:280px;
+    margin-top:60px; 
+    transform: translateX(-50%);
+    z-index: 1; /* Ensures the logo appears above the image */
+}
+
+.img-fluid {
+    margin-top: -100px;
+}
+
+.card {
+    margin-top: -90px;
+    margin-left:10px;
+    width: 350px;
+    height: 350px;
+}
+
+.img-container {
+    height: 700px;
+    overflow: hidden;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: black;
+    border-color: black;
+    width: 100%; /* Make button full width */
+}
+.btn-primary:hover {
+    background-color:#cccccc;/* Change to ash color on hover */
+    border-color:#cccccc;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group-append {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.btn-outline-secondary {
+    width: 40px; /* Adjust width as needed */
+    height: 37px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .card {
+        margin-top:-140px;
+        margin-bottom:20px;/* Add margin-bottom for smaller screens */
+    }
+    .logo {
+        margin-left:190px;
+        margin-top:70px; 
+        transform: translateX(-50%);
+        z-index: 1; /* Ensures the logo appears above the image */
+    }
+
+}/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2024, 6:04:40 PM
+    Author     : fernandomnr
+*/
+

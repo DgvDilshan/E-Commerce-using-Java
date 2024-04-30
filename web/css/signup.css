@@ -85,7 +85,6 @@
 .btn-primary:hover {
     background-color:#cccccc;/* Change to ash color on hover */
     border-color:#cccccc;
-
 }
 @media only screen and (max-width: 768px) {
     .authentication-section {

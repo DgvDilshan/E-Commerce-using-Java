@@ -1,9 +1,12 @@
 .authentication-section {
     height: 100vh;
-    overflow: hidden;
+
 }
 .authentication-section .authentication-img {
     position: relative;
+    height:100%;
+    margin-top:-150px;
+
 }
 
 .authentication-section .authentication-img .logo {
@@ -20,6 +23,7 @@
     gap: 32px;
     text-align: left;
     padding-top: 40px;
+    margin-left:200px;
 }
 .authentication-form h3 {
     font-family: Poppins;
@@ -44,9 +48,48 @@
 .authentication-form .error {
     color: #ff3333;
 }
+.logo {
+    position: absolute;
+    top: 20px;
+    margin-left:280px;
+    margin-top:60px; 
+    transform: translateX(-50%);
+    z-index: 1; /* Ensures the logo appears above the image */
+}
+.img-fluid{
+    margin-top:-100px;
+}
+.card {
+    margin-top: -90px;
+    margin-left:10px;/* Adjust the top margin as needed */
+}
+
+.img-container {
+    height: 700px; /* Adjust the height as needed */
+    overflow: hidden;
+}
+.form-control {
+    margin-bottom: 20px; /* Increase the gap between input fields */
+}
+.btn-primary {
+    background-color: black; /* Set button color to black */
+    border-color: black; /* Set button border color to black */
+}
+.input-group button {
+    width: 40px; /* Adjust width as needed */
+    height: 37px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary:hover {
+    background-color:#cccccc;/* Change to ash color on hover */
+    border-color:#cccccc;
+
+}
 @media only screen and (max-width: 768px) {
     .authentication-section {
-        height: auto;
-        overflow: auto;
+
+
     }
 }

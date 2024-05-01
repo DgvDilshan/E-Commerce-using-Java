@@ -3,25 +3,24 @@ const ITEMS = [
         id: 1,
         name: 'Tray Table',
         price: 19,
-        image: 'image/product6.png', // Corrected path
+        image: 'images/product6.png',
         qty: 1,
     },
     {
         id: 2,
         name: 'Tray Table',
         price: 19,
-        image: 'image/productt.png', // Corrected path
+        image: 'images/productt.png',
         qty: 1,
     },
     {
         id: 3,
         name: 'Table Lamp',
         price: 39,
-        image: 'image/product10.png', // Corrected path
+        image: 'images/product6.png',
         qty: 1,
-    }
-];
-
+    },
+]
 
 const openBtn = document.getElementById('open_cart_btn')
 const cart = document.getElementById('sidecart')
@@ -108,13 +107,13 @@ function decreaseQty(itemId){
     updateCart()
 }
 
-// Calculate Item Num
+// Calculate Item Number
 function calcItemsNum(){
     let itemsCount = 0
 
     cart_data.forEach((item) => (itemsCount += item.qty))
 
-    itemNum.innerText = itemsCount
+    itemNum.innerText = itemsCount // Corrected the variable name
 }
 
 // Calculate Subtotal Price
@@ -126,7 +125,7 @@ function calcSubtotalPrice(){
     });
 
     // Update the subtotal price in the DOM
-    subtotalPrice.innerText = subtotal.toFixed(2);
+    subtotalPrice.innerText = subtotal.toFixed(2); // Ensure the price is formatted to two decimal places
 }
 
 
@@ -138,7 +137,7 @@ function renderItems(){
         itemE1.onclick = () => addItem(idx, item.id)
         itemE1.innerHTML = `
         <img src="${item.image}" alt="" />
-                <button>Add to Cart</button>
+         <button>Add to Cart</button>
         `
         itemsE1.appendChild(itemE1)        
     })

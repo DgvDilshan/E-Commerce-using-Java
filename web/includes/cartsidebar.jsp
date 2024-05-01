@@ -48,5 +48,5 @@
         </div>
     </div>
     <!-- Script -->
-    <script src="cartsidebar.js" defer></script>
+    <script src="js/cartsidebar.js" defer></script>
 </body>

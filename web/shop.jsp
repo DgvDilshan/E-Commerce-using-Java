@@ -49,7 +49,7 @@
                                     <div class="new">new</div>
                                     <div class="discount">-50%</div>
                                     <button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>
-                                    <img src="assets/Elements/product1.png" />
+                                    <img class="img-fluid mb-3" src="assets/Elements/product1.png" alt="" />
                                 </div>
                                 <div class="pro-card-details">
                                     <div class="rating">

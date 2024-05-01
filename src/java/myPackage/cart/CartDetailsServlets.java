@@ -21,7 +21,7 @@ public class CartDetailsServlets extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String total = request.getParameter("total_price");
-        
+
         float totalFloat = Float.parseFloat(total);
         
         if(Float.isNaN(totalFloat)){

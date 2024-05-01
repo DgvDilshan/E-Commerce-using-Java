@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*sidenav start*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.profile {
+    margin-top:5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidenav a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #555;
+    display: block;
+    transition: background-color 0.3s;
+    margin-bottom:5px;
+}
+
+.sidenav a.active {
+    background-color: black;
+    color: white;
+}
+
+.sidenav a:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+.openbtn {
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;;
+    z-index: 1;
+    top: 2px;
+    left: 10px;
+}
+
+.sidenavimg{
+    margin-left:-100px;
+}
+
+/*sidenav end*/
+.custom-card .card-body {
+    padding: 20px; /* Decrease padding inside cards */
+    width:95%;
+    margin-bottom:-2px;
+}
+
+.custom-card{
+    width:400px;
+    margin-bottom:40px;
+}
+
+.custom-form .form-control {
+    padding: 0.25rem 0.5rem; /* Decrease padding for form controls */
+    font-size: 0.875rem; /* Decrease font size for form controls */
+}
+
+.heading-gap {
+    margin-bottom: 40px; /* Add gap between heading and cards */
+}
+
+.custom-heading {
+    font-size: 38px; /* Decrease font size for heading */
+}
+
+.custom-card-container {
+    margin-left: -200px; 
+    /* Align cards a little to the left */
+}
+
+.card-title {
+    font-size:19px;
+    margin-left:10px;
+    margin-bottom:-5px/* Decrease font size for card titles */
+}
+
+h1.header{
+    margin-left: 592px;
+    margin-bottom:40px;
+    margin-top:76px;
+}
+
+.custom-submit-btn {
+    background-color: #000000;
+    color:white;
+    border: none;
+    font-size:15px;
+    border-radius: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: right;
+}
+
+.custom-submit-btn:hover {
+    background-color: #333333;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+    .sidenav {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .custom-card-container {
+        margin-left: 0px; 
+        /* Align cards a little to the left */
+    }
+    .custom-card{
+        width:98% ;
+        margin-bottom:40px;
+    }
+
+
+    h1.header{
+        text-align:center;
+        margin-bottom:50px;
+        margin-left:0px;
+    } 
+
+}
+
+

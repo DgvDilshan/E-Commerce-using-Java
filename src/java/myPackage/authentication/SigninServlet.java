@@ -16,9 +16,7 @@ import javax.servlet.http.HttpSession;
 import myPackage.DbUtil;
 
 public class SigninServlet extends HttpServlet {
-
-
-    @Override
+ @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -120,7 +118,6 @@ public class SigninServlet extends HttpServlet {
         }
         return null;
     }
-    
     private int getUserId(String email) throws SQLException {
         try (Connection conn = DbUtil.getConnection()){
             String query = "SELECT user_id FROM users WHERE user_email = ?";
@@ -136,9 +133,7 @@ public class SigninServlet extends HttpServlet {
         }
         return -1;
     }
-    
-    
-    private boolean verifyPassword(String password, String storedHashedPassword) {
+     private boolean verifyPassword(String password, String storedHashedPassword) {
         String hashedInputPassword = hashPassword(password);
          System.out.println("ape hashed pwd");
          System.out.println(hashedInputPassword);

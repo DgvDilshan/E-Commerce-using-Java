@@ -221,20 +221,7 @@ public class AccountServlet extends HttpServlet {
         accountDao.updateAddress(adress, user_id);
         response.sendRedirect("myaccount?action=address");
     }
-//    private void updateShippingAddr(HttpServletRequest request, HttpServletResponse response)
-//    throws SQLException, IOException {
-//        int user_id = Integer.parseInt(request.getParameter("user_id"));
-//        System.out.println(user_id); 
-//        String address_type = "shipping";
-//        String shipping_name = request.getParameter("shipping_name");
-//        String shipping_phone = request.getParameter("shipping_phone");
-//        String shipping_address = request.getParameter("shipping_address");
-//        Account account = new Account(user_id,shipping_name,shipping_phone, shipping_address,false);
-//        System.out.println("this is servlet and after making object");
-//        accountDao.updateShippingAddress(account);
-//        response.sendRedirect("myaccount?action=address");
-//    }
-//    
+  
     private String hashPassword(String password) {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");

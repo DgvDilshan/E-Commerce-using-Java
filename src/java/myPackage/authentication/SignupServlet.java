@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import myPackage.DbUtil;;
 
 public class SignupServlet extends HttpServlet {
-
-
-    @Override
+@Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
@@ -27,9 +25,7 @@ public class SignupServlet extends HttpServlet {
         String phoneNumber = request.getParameter("pno");
         
         String hashedPassword = hashPassword(password);
-        
         boolean userExists = checkUserExists(email);
-        
         if(userExists){
             response.getWriter().write("You Already Registered, Login please");
         }else {
@@ -77,7 +73,6 @@ public class SignupServlet extends HttpServlet {
             e.getMessage();
         }
     }
-    
     private String hashPassword(String password) {
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -88,7 +83,6 @@ public class SignupServlet extends HttpServlet {
             return null;
         }
     }
-
     private String bytesToHex(byte[] bytes) {
         StringBuilder result = new StringBuilder();
         for (byte b : bytes) {

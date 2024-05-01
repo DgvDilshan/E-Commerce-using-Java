@@ -6,7 +6,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
@@ -14,24 +13,25 @@
     <title>E commerce side cart</title>
 </head>
 <body>
-    <!-- Open Cart Button -->
+    <!-- Open Btn -->
     <button id="open_cart_btn">
         <img src="../assets/icons/cart.svg" alt="" style="width: 30px;">
     </button>
 
-    <!-- Placeholder for Items -->
+    <!-- Items -->
     <div class="items"></div>
-
+    
+    <!-- backdrop -->
+    <div class="backdrop"></div>
     <!-- Side Cart -->
     <div id="sidecart" class="sidecart">
-        <!-- Cart Content -->
         <div class="cart_content">
             <!-- Cart Header -->
             <div class="cart_header">
-                <img src="images/cart.svg" alt="" style="width: 30px">
+                <img src="../assets/icons/cart.svg" alt="" style="width: 30px">
                 <div class="header_title">
                     <h2>Your cart</h2>
-                    <span id="items_num">0</span>
+                    <span id="items_num">2</span>
                 </div>
                 <span id="close_btn" class="close_btn">&times;</span>
             </div>
@@ -48,8 +48,5 @@
         </div>
     </div>
     <!-- Script -->
-    <script src="main.js" defer></script>
+    <script src="cartsidebar.js" defer></script>
 </body>
-</html>
-
-

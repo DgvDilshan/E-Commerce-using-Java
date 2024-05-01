@@ -1,32 +1,27 @@
 /* CSS Styles for the Shopping Cart Interface */
 
-/* Reset Styles */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Root Variables */
 :root {
     --accent-color: #069fe6;
     --light-gray: rgba(0, 0, 0, 0.1);
 }
 
-/* Button Hover Effect */
 button:hover {
     opacity: 0.8;
 }
 
-/* Body Styles */
 body {
     min-height: 100vh;
     background-color: #f0ebeb;
     overflow: hidden;
 }
 
-/* Open Cart Button */
 #open_cart_btn {
     position: absolute;
     top: 10px;
@@ -41,7 +36,6 @@ body {
     cursor: pointer;
 }
 
-/* Items Container */
 .items {
     padding: 2rem;
     width: 100%;
@@ -53,20 +47,29 @@ body {
     gap: 2rem;
 }
 
-/* Side Cart Styles */
-.sidecart {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 350px;
-    background-color: #fff;
-    box-shadow: -10px 0 15px var(--light-gray);
-    z-index: 2;
-    transform: translateX(110%);
-    transition: transform 0.5s ease-in-out;
+.items .item{
+    width: 185px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+.items .item img{
+    width: 100%;
+}
+
+.items .item button{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
 /* Cart Content Styles */
 .cart_content {
     height: 100%;
@@ -88,6 +91,20 @@ body {
     position: relative;
 }
 
+.header_title span{
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Close Button Styles */
 .cart_header .close_btn {
     font-size: 2rem;
@@ -95,7 +112,11 @@ body {
     transition: transform 0.2s ease;
 }
 
-/* Backdrop Styles */
+.cart_header .close_btn:hover{
+    transform: scale(1.1);
+}
+
+/* Backdrop */
 .backdrop {
     position: fixed;
     top: 0;
@@ -109,10 +130,23 @@ body {
     transition: opacity 0.5s ease;
 }
 
-/* Show Backdrop */
 .backdrop.show {
     display: block;
     opacity: 1;
+}
+
+/* Side Cart */
+.sidecart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: -10px 0 15px var(--light-gray);
+    z-index: 2;
+    transform: translateX(110%);
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Side Cart Open Animation */
@@ -212,5 +246,41 @@ body {
 .qty span:first-of-type{
     font-size: 2rem;
     padding-bottom: 5px;
+}
+
+/*Cart Action*/
+.cart_actions{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--accent-color);
+    box-shadow: 0 -5px 10px var(--light-gray);
+}
+
+.cart_actions .subtotal{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cart_actions button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.cart_actions button:nth-of-type(2){
+    background-color: var(--accent-color);
 }
 

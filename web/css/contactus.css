@@ -1,0 +1,254 @@
+.breadcrumb {
+    width: 147px;
+    height: 24px;
+    align-items: center;
+}
+
+.breadcrumb h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    
+}
+
+.breadcrumb h5 a {
+    color: #605F5F;
+}
+.breadcrumb img {
+    width: 12px;
+    height: 12px;
+}
+.contact-us-title {
+    max-width: 834px;
+    margin-bottom:24px;
+}
+.contact-us-banner{
+    margin-bottom: 40px;
+}
+.contact-us-desc{
+    max-width: 834px
+}
+.contact-us-title h2{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    font-family: poppins;
+}
+.contact-us-desc h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: inter;
+}
+.feature  {
+    height: 622px;
+}
+.feature-img {
+    height: 311px;
+    
+}
+.feature-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.feature-desc{
+    height: 311px;
+    background-color: #F3F5F7;
+    padding: 63.5px 16px 63.5px 16px;
+}
+.feature-banner{
+    width: 279px;
+    height: 132px;
+    margin-bottom: 24px;
+}
+.feature-banner-title{
+    width:279px;
+    height: 28px;
+    margin-bottom: 16px;
+}
+.feature-banner-title h3{
+    font-family: poppins;
+    font-size: 20px;
+}
+.feature-banner-desc p{
+    font-family: inter;
+    font-size: 14px;
+    line-height: 22px;
+    
+}
+.feature-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100px;
+    border-bottom: 2px solid black;
+}
+.feature-button h5 {
+    font-family: inter;
+    font-weight:500;
+    font-size: 16px;   
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.feature-button a{
+    color: #121212;
+}
+.feature-button img{
+    width: 20px;
+    height: 20px;
+}
+.contact {
+    height: 622px;
+}
+.contact-desc{
+    height: 156px;
+    background-color: #F3F5F7;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    text-align: center;
+}
+.contact-title{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contact-title h3{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight:500;
+}
+.contact-desc h4{
+    font-family: inter;
+    font-size: 16px;
+    font-weight:700;
+    color: #6C7275;
+}
+.contact-desc p{
+    font-family: inter;
+    font-size: 16px;
+    font-weight:600;
+}
+.contact-map iframe{
+    width:100%;
+    height: 100%;
+}
+.contact-map p{
+    width:100%;
+    height: 311px;
+}
+.contact-form label {
+    font-family: inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #6C7275;
+}
+.contact-form input{
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    border-radius: 5px;;
+}
+.contact-form textArea{
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+.contact-form #button{
+    width: 190px;
+    background-color: #141718;
+    color: #FFF; 
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.contact-value {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -4px;
+    margin-right: -4px;
+    background-color: #F3F5F7;
+}
+
+.contact-value-item {
+    width: 50%;
+    padding: 0px 4px;
+    margin-bottom: 24px;
+}
+
+.contact-value-item h4 {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.contact-value-item p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6C7275;
+    margin-bottom: 0;
+}
+
+.contact-value-item img {
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+}
+.contact-value-item-inner {
+    padding: 32px 16px;
+}
+@media only screen and (min-width:768px){
+.contact-us-title h2{
+    font-size: 54px;
+    line-height: 58px;
+}
+.feature  {
+    display: flex;
+    height:340px;
+}
+.feature-img {
+    width: 50%;
+}
+.feature-desc{
+    width: 50%;
+}
+.contact-descbox{
+    display: flex;
+}
+.contact-desc{
+    margin-right: 24px;
+    width: 33.35%;
+}
+.contact-value {
+    display: flex;   
+}
+.contact-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.contact-map{
+    width: 50%;
+}
+.contact-form{
+    width: 50%;
+}
+.contact-map p{
+    margin: 0;
+    height: 345px;
+}
+.contact-map{
+    margin-left: 25px;
+}
+.contact-value-item {
+    width: 25%;
+}
+}

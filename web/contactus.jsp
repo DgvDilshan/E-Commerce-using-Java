@@ -25,26 +25,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-  <header class="header">
-                       
-        <%@include file="includes/navbar.jsp" %>
-        <%@include file="includes/searchbar.jsp" %>
-        
-        <div class="container">
-            <div class="hero-wrapper">
-                <div class="hero-text">
-                    <h1>More than just a game. It’s a lifestyle.</h1>
-                    <p>Whether you’re just starting out, have played your whole life or you're a Tour pro, your swing is like a fingerprint.</p>
-                    <a>
-                        <b:Button text="Shopping Now" rounded="false" outlined="false"/>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-       <%@include file="includes/newsletter.jsp" %>
-       <%@include file="includes/contactus.jsp" %>
-       <%@include file="includes/footer.jsp" %>
+    
+    <%@include file="includes/navbar.jsp" %>
+    <%@include file="includes/searchbar.jsp" %>
+    <%@include file="includes/contactus.jsp" %>
+    <%@include file="includes/footer.jsp" %>
        
  
   <script
@@ -54,3 +39,14 @@
   ></script>
   <script src="js/index.js"></script>
 </body>
+
+       
+ 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/index.js"></script>
+</body>
+

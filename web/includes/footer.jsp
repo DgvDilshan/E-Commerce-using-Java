@@ -19,9 +19,9 @@
                             <h3>Page</h3>
                             
                             <ul class="footer-links" role="list">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Shop</a></li>
-                                <li><a href="">Contact us</a></li>
+                                <li><a href="index.jsp">Home</a></li>
+                                <li><a href="shop.jsp">Shop</a></li>
+                                <li><a href="contactus.jsp">Contact us</a></li>
                             </ul>
                         </div>
                     </div>

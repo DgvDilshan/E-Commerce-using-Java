@@ -34,8 +34,8 @@
 
       <ul class="nav-list" role="list">
         <li><a href="index.jsp">Home</a></li>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Contact us</a></li>
+        <li><a href="shop.jsp">Shop</a></li>
+        <li><a href="contactus.jsp">Contact us</a></li>
       </ul>
 
       <div class="nav-icons">

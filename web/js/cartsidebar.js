@@ -1,4 +1,4 @@
-const ITEMS = [
+var ITEMS = [
     {
         id: 1,
         name: 'Tray Table',
@@ -22,16 +22,16 @@ const ITEMS = [
     },
 ]
 
-const openBtn = document.getElementById('open_cart_btn')
-const cart = document.getElementById('sidecart')
-const closeBtn = document.getElementById('close_btn')
-const backdrop = document.querySelector('.backdrop')
-const itemsE1 = document.querySelector('.items')
-const cartItems = document.querySelector('.cart_items')
-const itemNum = document.getElementById('items_num')
-const subtotalPrice = document.getElementById('subtotal_price')
+var openBtn = document.getElementById('open_cart_btn')
+var cart = document.getElementById('sidecart')
+var closeBtn = document.getElementById('close_btn')
+var backdrop = document.querySelector('.backdrop')
+var itemsE1 = document.querySelector('.items')
+var cartItems = document.querySelector('.cart_items')
+var itemNum = document.getElementById('items_num')
+var subtotalPrice = document.getElementById('subtotal_price')
 
-let cart_data = []
+var cart_data = []
 
 openBtn.addEventListener('click', openCart)
 closeBtn.addEventListener('click', closeCart)
@@ -41,29 +41,30 @@ renderItems()
 renderCartItems()
 
 // Open Cart
-function openCart(){
-    cart.classList.add('open')
-    backdrop.style.display = 'block'
+function openCart() {
+    cart.classList.add('open');
+    backdrop.style.display = 'block';
     
-    setTimeout(() =>{
-    backdrop.classList.add('show')
-    }, 0)
+    setTimeout(function() {
+        backdrop.classList.add('show');
+    }, 0);
 }
 
 // Close Cart
-function closeCart(){
-    cart.classList.remove('open')
-    backdrop.classList.remove('show')
+function closeCart() {
+    cart.classList.remove('open');
+    backdrop.classList.remove('show');
 
-    setTimeout(() =>{
-    backdrop.style.display = 'none'
-    }, 500)
+    setTimeout(function() {
+        backdrop.style.display = 'none';
+    }, 500);
 }
+
 
 // Add Items to Cart
 function addItem(idx, itemId){
     // Find same items
-    const foundedItem = cart_data.find(
+    var foundedItem = cart_data.find(
     (item) => item.id.toString() === itemId.toString()
     )
 
@@ -86,30 +87,36 @@ function removeCartItem(itemId) {
 }
 
 // Increase Qty
-function increaseQty(itemId){
-    cart_data = cart_data.map(item => 
-        item.id.toString() === itemId.toString() 
-          ? {...item, qty: item.qty + 1} 
-          : item
-    )   
+function increaseQty(itemId) {
+    cart_data = cart_data.map(function(item) {
+        if (item.id.toString() === itemId.toString()) {
+            return { id: item.id, qty: item.qty + 1 };
+        } else {
+            return item;
+        }
+    });
     
-    updateCart()
+    updateCart();
 }
 
+
 // Decrease Qty
-function decreaseQty(itemId){
-    cart_data = cart_data.map(item => 
-        item.id.toString() === itemId.toString() 
-          ? {...item, qty: item.qty > 1 ? item.qty - 1 : item.qty} 
-          : item
-    )   
+function decreaseQty(itemId) {
+    cart_data = cart_data.map(function(item) {
+        if (item.id.toString() === itemId.toString()) {
+            return { id: item.id, qty: item.qty > 1 ? item.qty - 1 : item.qty };
+        } else {
+            return item;
+        }
+    });
     
-    updateCart()
+    updateCart();
 }
+
 
 // Calculate Item Number
 function calcItemsNum(){
-    let itemsCount = 0
+    var itemsCount = 0
 
     cart_data.forEach((item) => (itemsCount += item.qty))
 
@@ -117,62 +124,68 @@ function calcItemsNum(){
 }
 
 // Calculate Subtotal Price
-function calcSubtotalPrice(){
-    let subtotal = 0;
+function calcSubtotalPrice() {
+    var subtotal = 0;
 
-    cart_data.forEach((item) => {
+    cart_data.forEach(function(item) {
         subtotal += item.price * item.qty;
     });
 
     // Update the subtotal price in the DOM
-    subtotalPrice.innerText = subtotal.toFixed(2); // Ensure the price is formatted to two decimal places
+    subtotalPrice.innerText = subtotal.toFixed(2);
 }
+
 
 
 // Render Items
-function renderItems(){
-    ITEMS.forEach((item,idx) => {
-        const itemE1 = document.createElement('div')
-        itemE1.classList.add('item')
-        itemE1.onclick = () => addItem(idx, item.id)
-        itemE1.innerHTML = `
-        <img src="${item.image}" alt="" />
-         <button>Add to Cart</button>
-        `
-        itemsE1.appendChild(itemE1)        
-    })
+function renderItems() {
+    ITEMS.forEach(function(item, idx) {
+        var itemE1 = document.createElement('div');
+        itemE1.classList.add('item');
+        itemE1.onclick = function() { addItem(idx, item.id); };
+        itemE1.innerHTML = '<img src="' + item.image + '" alt="" />' +
+                           '<button>Add to Cart</button>';
+        itemsE1.appendChild(itemE1);
+    });
 }
+
 
 // Display / Render Cart Items
 function renderCartItems(){
     // Remove everything from cart
     cartItems.innerHTML=''
     // Add new data
-    cart_data.forEach(item => {
-        const cartItem = document.createElement('div')
-        cartItem.classList.add('cart_item')
-        cartItem.innerHTML= `
-                    <div class="remove_item" onclick="removeCartItem(${item.id})">
-                    <span>&times;</span>
-                  </div>
-                  <div class="item_img">
-                    <img src="${item.image}" alt=""/>
-                  </div>
-                  <div class="item_details">
-                    <p>${item.name}</p>
-                    <strong>${item.price}</strong>
-                    <div class="qty">
-                        <span onclick="decreaseQty(${item.id})">-</span>
-                        <strong>${item.qty}</strong>
-                        <span onclick="increaseQty(${item.id})">+</span>
-                  </div>
-                  </div>
-        `
+    cart_data.forEach(function(item) {
+        var cartItem = createCartItem(item);
+        cartItems.appendChild(cartItem);
+    });
+}
+function createCartItem(item) {
+    var cartItem = document.createElement('div');
+    cartItem.classList.add('cart_item');
+    cartItem.innerHTML = '<div class="remove_item" onclick="removeCartItem(' + item.id + ')">' +
+                            '<span>&times;</span>' +
+                        '</div>' +
+                        '<div class="item_img">' +
+                            '<img src="' + item.image + '" alt=""/>' +
+                        '</div>' +
+                        '<div class="item_details">' +
+                            '<p>' + item.name + '</p>' +
+                            '<strong>' + item.price + '</strong>' +
+                            '<div class="qty">' +
+                                '<span onclick="decreaseQty(' + item.id + ')">-</span>' +
+                                '<strong>' + item.qty + '</strong>' +
+                                '<span onclick="increaseQty(' + item.id + ')">+</span>' +
+                            '</div>' +
+                        '</div>';
 
-        cartItems.appendChild(cartItem)
-    })
+    return cartItem;
 }
 
+Array.from(cartItems.children).forEach(function(item) {
+    var cartItem = createCartItem(item);
+    cartItems.appendChild(cartItem);
+});
 function updateCart(){
     // Render cart items with updated data
     renderCartItems()

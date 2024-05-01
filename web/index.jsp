@@ -29,7 +29,7 @@
   <header class="header">
       <%@include file="includes/navbar.jsp" %>
       <%@include file="includes/searchbar.jsp" %>
-      
+      <%@include file="includes/cartsidebar.jsp" %>
   </header>
        <%@include file="includes/newsletter.jsp" %>
        <%@include file="includes/contactus.jsp" %>

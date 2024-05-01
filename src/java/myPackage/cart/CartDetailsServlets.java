@@ -1,4 +1,5 @@
 package myPackage.cart;
+
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import myPackage.DbUtil;
 
-@WebServlet(name = "CartDetailsServlets", urlPatterns = {"/CartDetailsServlets"})
+@WebServlet(name = "CartDetailsServlets", urlPatterns = { "/CartDetailsServlets" })
 public class CartDetailsServlets extends HttpServlet {
 
     @Override
@@ -23,31 +24,29 @@ public class CartDetailsServlets extends HttpServlet {
         String total = request.getParameter("total_price");
 
         float totalFloat = Float.parseFloat(total);
-        
-        if(Float.isNaN(totalFloat)){
+
+        if (Float.isNaN(totalFloat)) {
             totalFloat = (float) 0.11;
         }
-        
+
         String cartItemsJson = request.getParameter("cart_items");
         String shippingMethod = request.getParameter("shipping_method");
         int userId = getUserIdFromSession();
-        
+
         try (Connection conn = DbUtil.getConnection()) {
             conn.setAutoCommit(false);
 
-            conn.setAutoCommit(false); 
+            conn.setAutoCommit(false);
 
-            
             int orderId = insertOrder(conn, userId, totalFloat, shippingMethod);
-            
+
             if (orderId != -1) {
-                insertOrderItems(conn, orderId, cartItemsJson);               
+                insertOrderItems(conn, orderId, cartItemsJson);
                 conn.commit();
 
                 insertOrderItems(conn, orderId, cartItemsJson);
-                
-                conn.commit(); 
 
+                conn.commit();
 
                 response.setContentType("text/plain");
                 PrintWriter out = response.getWriter();
@@ -55,11 +54,11 @@ public class CartDetailsServlets extends HttpServlet {
             } else {
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Failed to insert order.");
             }
-        }catch(SQLException e){
+        } catch (SQLException e) {
             e.getMessage();
         }
     }
-    
+
     private int insertOrder(Connection conn, int userId, float totalFloat, String shippingMethod) throws SQLException {
         String query = "INSERT INTO orders (order_code, user_id, total, shipping_method, status, payment_method, ordered_date) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (PreparedStatement statement = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
@@ -102,42 +101,39 @@ public class CartDetailsServlets extends HttpServlet {
             statement.executeBatch();
         }
     }
-    
+
     private String generateUniqueOrderCode(Connection conn) throws SQLException {
         String orderCode;
         do {
-          int random3Digit = (int) (Math.random() * 900) + 100;
-          int random8Digit = (int) (Math.random() * 100000000);
+            int random3Digit = (int) (Math.random() * 900) + 100;
+            int random8Digit = (int) (Math.random() * 100000000);
 
-          orderCode = "#" + random3Digit + "_" + random8Digit;
+            orderCode = "#" + random3Digit + "_" + random8Digit;
 
-          
-        } while (orderCodeAlreadyExists(conn, orderCode)); 
+        } while (orderCodeAlreadyExists(conn, orderCode));
 
-         return orderCode;
+        return orderCode;
     }
-    
-    private boolean orderCodeAlreadyExists(Connection conn, String orderCode)throws SQLException {
-          String checkQuery = "SELECT * FROM orders WHERE order_code = ?";
-          try (PreparedStatement checkStatement = conn.prepareStatement(checkQuery)) {
+
+    private boolean orderCodeAlreadyExists(Connection conn, String orderCode) throws SQLException {
+        String checkQuery = "SELECT * FROM orders WHERE order_code = ?";
+        try (PreparedStatement checkStatement = conn.prepareStatement(checkQuery)) {
             checkStatement.setString(1, orderCode);
-            try(ResultSet result = checkStatement.executeQuery()){
-                if(result.next()){
+            try (ResultSet result = checkStatement.executeQuery()) {
+                if (result.next()) {
                     int count = result.getInt(1);
-                    if(count > 0){
+                    if (count > 0) {
                         return true;
                     }
                 }
             }
-          }
-          
-          return false;
+        }
+
+        return false;
     }
-    
+
     private int getUserIdFromSession() {
         return 2;
     }
-    
+
 }
-
-

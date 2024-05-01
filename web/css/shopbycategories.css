@@ -29,14 +29,7 @@
             height: auto;
             border-radius: 5px;
         }
-        .box img:hover{
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            background-color: darkblue;
-            transform: scale(1.1);
-           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
+       
 
         .box h6 {
             margin-top: 10px;

@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 import myPackage.DbUtil;
 
 
-@WebServlet(name = "ShopServlet", urlPatterns = {"/ShopServlet"})
-public class ShopServlet extends HttpServlet {
+@WebServlet(name = "ShopServletNew", urlPatterns = {"/ShopServletNew"})
+public class ShopServletNew extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

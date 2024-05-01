@@ -96,6 +96,10 @@
         <servlet-name>AddressItem</servlet-name>
         <servlet-class>myPackage.cart.AddressItem</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ShopServlet</servlet-name>
+        <servlet-class>myPackage.shop.ShopServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
@@ -191,6 +195,10 @@
     <servlet-mapping>
         <servlet-name>AddressItem</servlet-name>
         <url-pattern>/AddressItem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShopServlet</servlet-name>
+        <url-pattern>/ShopServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

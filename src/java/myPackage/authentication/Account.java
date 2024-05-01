@@ -15,21 +15,6 @@ public class Account {
     protected String billing_name;
     protected String shipping_name;
 
-//    public Account(int user_id, String first_name, String last_name, String display_name, String email, String password, String billing_phone, String billing_address, String shipping_phone, String shipping_address, String billing_name, String shipping_name) {
-//        this.user_id = user_id;
-//        this.first_name = first_name;
-//        this.last_name = last_name;
-//        this.display_name = display_name;
-//        this.email = email;
-//        this.password = password;
-//        this.billing_phone = billing_phone;
-//        this.billing_address = billing_address;
-//        this.shipping_phone = shipping_phone;
-//        this.shipping_address = shipping_address;
-//        this.billing_name = billing_name;
-//        this.shipping_name = shipping_name;
-//    }
-
     public Account(int user_id, String first_name, String last_name, String display_name, String email, String password) {
         this.user_id = user_id;
         this.first_name = first_name;

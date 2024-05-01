@@ -64,6 +64,5 @@ public class Order {
     public String getOrder_date() {
         return order_date;
     }
-
-   
+ 
 }

@@ -5,10 +5,7 @@
  */
 package myPackage.authentication;
 
-/**
- *
- * @author fernandomnr
- */
+
 public class Address {
     private String addressType;
     private String streetAddress;

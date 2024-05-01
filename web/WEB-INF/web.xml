@@ -97,84 +97,8 @@
         <servlet-class>myPackage.cart.AddressItem</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CartDetailsServlets</servlet-name>
-        <servlet-class>myPackage.cart.CartDetailsServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartItem</servlet-name>
-        <servlet-class>myPackage.cart.CartItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartServlets</servlet-name>
-        <servlet-class>myPackage.cart.CartServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CheckoutDetailsServlets</servlet-name>
-        <servlet-class>myPackage.cart.CheckoutDetailsServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ContactInformations</servlet-name>
-        <servlet-class>myPackage.cart.ContactInformations</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CantactItem</servlet-name>
-        <servlet-class>myPackage.cart.CantactItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderCompleteServlets</servlet-name>
-        <servlet-class>myPackage.cart.OrderCompleteServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderItem</servlet-name>
-        <servlet-class>myPackage.cart.OrderItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderSummaryServlets</servlet-name>
-        <servlet-class>myPackage.cart.OrderSummaryServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>RemoveCartItemServlet</servlet-name>
-        <servlet-class>myPackage.cart.RemoveCartItemServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartDetailsServlets</servlet-name>
-        <servlet-class>myPackage.cart.CartDetailsServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartItem</servlet-name>
-        <servlet-class>myPackage.cart.CartItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartServlets</servlet-name>
-        <servlet-class>myPackage.cart.CartServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CheckoutDetailsServlets</servlet-name>
-        <servlet-class>myPackage.cart.CheckoutDetailsServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ContactInformations</servlet-name>
-        <servlet-class>myPackage.cart.ContactInformations</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CantactItem</servlet-name>
-        <servlet-class>myPackage.cart.CantactItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderCompleteServlets</servlet-name>
-        <servlet-class>myPackage.cart.OrderCompleteServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderItem</servlet-name>
-        <servlet-class>myPackage.cart.OrderItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>OrderSummaryServlets</servlet-name>
-        <servlet-class>myPackage.cart.OrderSummaryServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>RemoveCartItemServlet</servlet-name>
-        <servlet-class>myPackage.cart.RemoveCartItemServlet</servlet-class>
+        <servlet-name>ShopServlet</servlet-name>
+        <servlet-class>myPackage.shop.ShopServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
@@ -273,44 +197,8 @@
         <url-pattern>/AddressItem</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>CartDetailsServlets</servlet-name>
-        <url-pattern>/CartDetailsServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartItem</servlet-name>
-        <url-pattern>/CartItem</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartServlets</servlet-name>
-        <url-pattern>/CartServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CheckoutDetailsServlets</servlet-name>
-        <url-pattern>/CheckoutDetailsServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ContactInformations</servlet-name>
-        <url-pattern>/ContactInformations</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CantactItem</servlet-name>
-        <url-pattern>/CantactItem</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>OrderCompleteServlets</servlet-name>
-        <url-pattern>/OrderCompleteServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>OrderItem</servlet-name>
-        <url-pattern>/OrderItem</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>OrderSummaryServlets</servlet-name>
-        <url-pattern>/OrderSummaryServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RemoveCartItemServlet</servlet-name>
-        <url-pattern>/RemoveCartItemServlet</url-pattern>
+        <servlet-name>ShopServlet</servlet-name>
+        <url-pattern>/ShopServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

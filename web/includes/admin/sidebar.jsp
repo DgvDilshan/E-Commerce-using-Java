@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li>  
-                    <a href="orders.jsp" class="process-element" id="side-link">
+                    <a href="order.jsp" class="process-element" id="side-link">
                         <div class="parent-icon"><i class="bi bi-bag-check"></i>
                         </div>
                         <div class="menu-title">Orders</div>

@@ -36,6 +36,13 @@
                         <div class="menu-title">Add New Product</div>
                     </a>
                 </li>
+                <li>  
+                    <a href="editProduct.jsp" class="process-element add-new-product" id="side-link ">
+                        <div class="parent-icon"><i class="bi bi-bag-check"></i>
+                        </div>
+                        <div class="menu-title">Edit Product</div>
+                    </a>
+                </li>
               </ul>
   
        </aside>

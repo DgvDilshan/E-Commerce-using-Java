@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li>  
-                    <a href="orders.jsp" class="process-element" id="side-link">
+                    <a href="order.jsp" class="process-element" id="side-link">
                         <div class="parent-icon"><i class="bi bi-bag-check"></i>
                         </div>
                         <div class="menu-title">Orders</div>
@@ -34,6 +34,13 @@
                         <div class="parent-icon"><i class="bi bi-bag-check"></i>
                         </div>
                         <div class="menu-title">Add New Product</div>
+                    </a>
+                </li>
+                <li>  
+                    <a href="editProduct.jsp" class="process-element add-new-product" id="side-link ">
+                        <div class="parent-icon"><i class="bi bi-bag-check"></i>
+                        </div>
+                        <div class="menu-title">Edit Product</div>
                     </a>
                 </li>
               </ul>

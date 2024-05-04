@@ -35,6 +35,99 @@
                         <img id="slide" src="./assets/products/Table 2.2.jpg" onclick="img('./assets/products/Table 2.2.jpg')">
                     </div>
                 </div>
+                <div class="right">
+                    <div class="product-content">
+                        <div class="product-up">
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>11 Review</span>
+                            </div>
+                            <h2 class="product-title">Tray Table</h2>
+                            <p class="product-description">Buy one or buy a low and make every space where you sit more convenient. 
+                            Light and easy to move around with removable tray top, handy for serving snacks.
+                            </p>
+                            <div class="product-price">
+                                <span class="discount-price">$200.00</span>
+                                <span class="price"><s>$400.00</s></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="product-mid">
+                            <p>offer expires in</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <span class="exp-date rounded">02</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="exp-date rounded">12</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="exp-date rounded">45</span>
+                                </div>
+                                <div class="col-2">
+                                    <span class="exp-date rounded">05</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="col-2 time">Days</span>
+                                <span class="col-2 time">Hours</span>
+                                <span class="col-2 time">Minutes</span>
+                                <span class="col-2 time">Seconds</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--Product down-->
+                        <div class="product-down">
+                            <p>Measurements :</p>
+                            <h5>17 1/2 x 20 5/8"</h5>
+                            
+                            <h6>Choose color: Black</h6>
+                            <div class="swatches-group-colorsmall">
+                                <div class="select-img">
+                                    <div class="btn small-image col-2">
+                                        <img src="./assets/products/black table 1.jpg" class="color-img">
+                                    </div>
+                                    <div class="btn small-image col-2">
+                                        <img src="./assets/products/gray table 2.jpg" class="color-img">
+                                    </div>
+                                    <div class="btn small-image col-2">
+                                        <img src="./assets/products/red table 3.jpg" class="color-img">
+                                    </div>
+                                    <div class="btn small-image col-2">
+                                        <img src="./assets/products/white table 4.jpg" class="color-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--button options-->
+                            <div class="row select-op">
+                                <div class="d-flex align-items-center col-2">
+                                    <button class="btn btn-quantity" type="button">-</button>
+                                    <input type="text" class="form-control bg-gray text-center" value="1" style="max-width: 50px;" />
+                                    <button class="btn btn-quantity" type="button">+</button>
+                                </div>
+                                <div class="wishlist col-2">
+                                    <button type="button" class="btn">Wishlist</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cart-btn">
+                                    <button type="button" class="btn btn-secondary btn-md btn-block">Add to cart</button>
+                                </div>
+                            </div>
+                            <div class="row cate">
+                                <div class="col mb-10 text-gray"><b>SKU</b></div>
+                                <div class="col mb-10">1117</div>
+                                <div class="w-100"></div>
+                                <div class="col mb-10 text-gray"><b>CATEGORY</b></div>
+                                <div class="col mb-10">Living Room, Bedroom </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         

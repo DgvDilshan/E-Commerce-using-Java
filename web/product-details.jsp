@@ -131,7 +131,25 @@
             </div>
         </section>
         
-        
+        <script>
+            function changeImage(imagePath) {
+                var imageElement = document.getElementById('slide'); // Assuming you have an element with id="slide"
+                if (imageElement) {
+                   imageElement.src = imagePath;
+                } else {
+                    console.error("Error: Could not find element with id='slide'");
+                }
+            }
+
+            function changeBackgroundColor(color) {
+                var line = document.getElementById('home'); // Assuming you have an element with id="home"
+                if (line) {
+                    line.style.background = color;
+                } else {
+                    console.error("Error: Could not find element with id='home'");
+                }
+            }
+        </script>
         
         <script>
             var contextPath = "${pageContext.request.contextPath}";

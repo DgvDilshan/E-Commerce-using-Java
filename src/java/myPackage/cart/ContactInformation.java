@@ -1,4 +1,5 @@
 package myPackage.cart;
+
 import com.google.gson.Gson;
 import java.io.IOException;
 import java.sql.Connection;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import myPackage.DbUtil;
 
-public class ContactInformations extends HttpServlet {
+public class ContactInformation extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)

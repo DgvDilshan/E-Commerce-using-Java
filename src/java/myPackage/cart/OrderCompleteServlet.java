@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import myPackage.DbUtil;
 
-public class OrderSummaryServlets extends HttpServlet {
+public class OrderCompleteServlet extends HttpServlet {
 
+  
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -25,7 +26,6 @@ public class OrderSummaryServlets extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         
         response.getWriter().write(json);
-
     }
     
     private ArrayList<OrderItem> getOrderItemsFromDb(){
@@ -38,7 +38,7 @@ public class OrderSummaryServlets extends HttpServlet {
                  + "FROM orders o "
                  + "INNER JOIN order_items oi ON o.order_id = oi.order_id "
                  + "INNER JOIN products p ON oi.pro_id = p.pro_id "
-                 + "WHERE o.user_id = ?")) {
+                 + "WHERE o.user_id = ? AND o.status = 'pending'")) {
             
             stmt.setInt(1, userId);
             try (ResultSet rs = stmt.executeQuery()) {
@@ -64,5 +64,6 @@ public class OrderSummaryServlets extends HttpServlet {
         }
         return orderItems;
     } 
+
 
 }

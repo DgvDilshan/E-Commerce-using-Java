@@ -84,22 +84,6 @@
         <servlet-name>SignoutServlet</servlet-name>
         <servlet-class>myPackage.authentication.SignoutServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>AddToCartServlet</servlet-name>
-        <servlet-class>myPackage.cart.AddToCartServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>AddressInfoServlets</servlet-name>
-        <servlet-class>myPackage.cart.AddressInfoServlets</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>AddressItem</servlet-name>
-        <servlet-class>myPackage.cart.AddressItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ShopServlet</servlet-name>
-        <servlet-class>myPackage.shop.ShopServlet</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
@@ -183,22 +167,6 @@
     <servlet-mapping>
         <servlet-name>SignoutServlet</servlet-name>
         <url-pattern>/SignoutServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddToCartServlet</servlet-name>
-        <url-pattern>/AddToCartServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddressInfoServlets</servlet-name>
-        <url-pattern>/AddressInfoServlets</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddressItem</servlet-name>
-        <url-pattern>/AddressItem</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ShopServlet</servlet-name>
-        <url-pattern>/ShopServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

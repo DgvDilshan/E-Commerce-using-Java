@@ -35,7 +35,7 @@ $(document).ready(function() {
             }
 
             proCardImg.append('<button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>');
-            proCardImg.append('<img class="img-fluid mb-3" src="' + contextPath + '/assets/Elements/' + shop.proImg + '" alt="">');
+            proCardImg.append('<img class="img-fluid mb-3" src="' + contextPath + '/assets/ElementsTh/' + shop.proImg + '" alt="">');
 
             var proCardDetails = $('<div>').addClass('pro-card-details');
             var rating = $('<div>').addClass('rating');

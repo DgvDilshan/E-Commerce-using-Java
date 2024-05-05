@@ -34,8 +34,8 @@
                 <div class="subtotal">
                     <p>SUBTOTAL: $<span id="subtotal_price">0.00</span></p> <!-- Updated initial value to 0.00 -->
                 </div>
-                <button>View cart</button>
-                <button>Checkout</button>
+                <button onclick="location.href='cart.jsp'">View Cart</button>
+                <button onclick="location.href='checkout.jsp'">Checkout</button>
             </div>
         </div>
     </div>

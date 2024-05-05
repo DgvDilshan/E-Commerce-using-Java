@@ -1,0 +1,347 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+    text-decoration: none !important;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: Inter, sans-serif !important;
+}
+
+.button {
+    display: inline-flex;
+    padding: 6px 40px;
+    justify-content: center;
+    height: 46px;
+    align-items: center;
+    gap: 8px;
+    color: white;;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    cursor: pointer;
+    /* Button S */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    width: 100%;
+}
+
+.page-content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 1.5rem;
+    transition: all .2s;
+}
+
+/* Sidebar */
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f7f8fa;
+    background-clip: padding-box;
+    border-right: 1px solid #e2e3e4;
+    transition: all .2s;
+    z-index: 16;
+}
+
+
+.sidebar-wrapper .sidebar-header {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 0 15px;
+    z-index: 5;
+    background: #f7f8fa;
+    border-right: 1px solid #e2e3e4;
+    border-bottom: 1px solid #e4e4e4;
+    transition: all .2s;
+}
+
+.sidebar-wrapper .sidebar-header .logo-icon {
+    width: 100%;
+}
+
+
+.toggle-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #3461ff;
+}
+
+
+
+.sidebar-wrapper ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: 0 0
+}
+
+.sidebar-wrapper .metismenu {
+	background: 0 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px;
+	margin-top: 60px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column
+}
+
+.sidebar-wrapper .metismenu li+li {
+	margin-top: 5px
+}
+
+.sidebar-wrapper .metismenu li:first-child {
+	margin-top: 5px
+}
+
+.sidebar-wrapper .metismenu li:last-child {
+	margin-bottom: 5px
+}
+
+.sidebar-wrapper .metismenu>li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	position: relative
+}
+
+.sidebar-wrapper .metismenu a {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding: 10px 15px;
+	font-size: 15px;
+	color: #6C7275;
+	outline-width: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	letter-spacing: .5px;
+	border: 1px solid #fff;
+}
+
+.sidebar-wrapper .metismenu a .parent-icon {
+	font-size: 21px;
+	line-height: 1
+}
+
+.sidebar-wrapper .metismenu a .menu-title {
+	margin-left: 10px
+}
+
+.sidebar-wrapper .metismenu ul a {
+	padding: 6px 15px 6px 15px;
+	font-size: 15px;
+	border: 0
+}
+
+.sidebar-wrapper .metismenu ul a i {
+	margin-right: 10px
+}
+
+.sidebar-wrapper .metismenu ul {
+	border: 1px solid #ededed;
+}
+
+.sidebar-wrapper .metismenu ul ul a {
+	padding: 8px 15px 8px 30px
+}
+
+.sidebar-wrapper .metismenu ul ul ul a {
+	padding: 8px 15px 8px 45px
+}
+
+.sidebar-wrapper .metismenu .mm-active>a,
+.sidebar-wrapper .metismenu a:active,
+.sidebar-wrapper .metismenu a:focus,
+.sidebar-wrapper .metismenu a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #141718;
+}
+.sidebar-wrapper .metismenu a.active{
+    	color: #fff;
+	text-decoration: none;
+	background-color: #141718;
+}
+
+.menu-label {
+	padding: 20px 15px 5px 5px;
+	color: #b0afaf;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .5px
+}
+
+.metismenu .has-arrow:after {
+	position: absolute;
+	content: "";
+	width: .5em;
+	height: .5em;
+	border-style: solid;
+	border-width: 1.2px 0 0 1.2px;
+	border-color: initial;
+	right: 15px;
+	transform: rotate(-45deg) translateY(-50%);
+	transform-origin: top;
+	top: 50%;
+	transition: all .3s ease-out
+}
+
+
+
+
+@media screen and (min-width:1025px) {
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .logo-text {
+		display: none
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper {
+		width: 70px
+	}
+    .wrapper.toggled.sidebar-hovered .sidebar-wrapper {
+		box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12)!important
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header {
+		width: 70px
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .toggle-icon {
+		display: none
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header {
+		justify-content: center
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header {
+		width: 70px
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu a {
+		justify-content: center
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu .menu-title {
+		display: none
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu li ul {
+		display: none
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu li.menu-label {
+		display: none
+	}
+	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .metismenu .has-arrow:after {
+		display: none
+	}
+	.email-toggle-btn {
+		display: none!important
+	}
+	.chat-toggle-btn {
+		display: none!important
+	}
+}
+
+
+
+.wrapper.toggled .top-header .navbar {
+	left: 70px
+}
+
+.wrapper.toggled .page-content {
+	margin-left: 70px
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+

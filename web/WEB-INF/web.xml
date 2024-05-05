@@ -184,6 +184,22 @@
         <servlet-name>SignoutServlet</servlet-name>
         <url-pattern>/SignoutServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/AddToCartServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddressInfoServlets</servlet-name>
+        <url-pattern>/AddressInfoServlets</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddressItem</servlet-name>
+        <url-pattern>/AddressItem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ShopServlet</servlet-name>
+        <url-pattern>/ShopServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

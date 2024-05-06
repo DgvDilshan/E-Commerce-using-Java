@@ -77,3 +77,19 @@ function addProduct(){
     return false;
 }
 
+function deleteProduct(proId){
+    $.ajax({
+        url: contextPath + '/RemoveProductsServlet',
+        type: 'POST',
+        data: {proId: proId},
+        success: function(response){
+            alert(response);
+            location.reload();
+            
+        },
+        error: function(){
+            alert("Error Deleting category");
+        }
+    });
+}
+

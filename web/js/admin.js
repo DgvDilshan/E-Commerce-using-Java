@@ -1,4 +1,59 @@
 $(document).ready(function() {
+    function fetchProducts() {
+    $.ajax({
+        url: contextPath + '/ProductsServlet',
+        type: 'GET',
+        dataType: 'json',
+        success: function(products) {
+            populateProductGrid(products);
+        },
+        error: function() {
+            alert('Error fetching products.');
+        }
+    });
+}
+
+    function populateProductGrid(products) {
+        var productGrid = $('#productGrid');
+        productGrid.empty();
+
+        if (products.length === 0) {
+            productGrid.append('<div class="col"><p>No products available</p></div>');
+        } else {
+            $.each(products, function(index, product) {
+                var card = $('<div>').addClass('col');
+                var cardBody = $('<div>').addClass('card-body text-center');
+
+                var img = $('<img>').addClass('img-fluid mb-3').attr('src', contextPath + '/uploads/' + product.proImg).attr('alt', '');
+                var title = $('<h6>').addClass('product-title').text(product.proName);
+                var price = $('<p>').addClass('product-price fs-5 mb-1').html('<span>$' + product.proPrice + '</span>');
+                var rating = $('<div>').addClass('rating mb-0');
+
+                for (var i = 0; i < Math.round(product.proReviews); i++) {
+                    rating.append('<i class="bi bi-star-fill text-warning"></i>');
+                }
+                var reviews = $('<small>').text(product.proReviews + ' Reviews');
+
+                var actions = $('<div>').addClass('actions d-flex align-items-center justify-content-center gap-2 mt-3');
+                var editButton = $('<button>').addClass('btn btn-sm btn-outline-primary').attr('onclick', 'editProduct('+ product.proId +')').html('<i class="bi bi-pencil-fill"></i> Edit');
+                var deleteButton = $('<button>').addClass('btn btn-sm btn-outline-danger').attr('onclick', 'deleteProduct('+ product.proId +')').html('<i class="bi bi-trash-fill"></i> Delete');
+
+                actions.append(editButton);
+                actions.append(deleteButton);
+
+                cardBody.append(img);
+                cardBody.append(title);
+                cardBody.append(price);
+                cardBody.append(rating);
+                cardBody.append(reviews);
+                cardBody.append(actions);
+
+                card.append(cardBody);
+                productGrid.append(card);
+            });
+        }
+    }
+    
     function fetchOrders() {
         $.ajax({
             url: contextPath + '/OrderServlet',

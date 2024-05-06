@@ -43,7 +43,6 @@
         </div>
     </header>
        <%@include file="includes/newsletter.jsp" %>
-       <%@include file="includes/contactus.jsp" %>
        <%@include file="includes/footer.jsp" %>
        
  

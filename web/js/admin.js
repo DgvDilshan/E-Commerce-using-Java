@@ -97,6 +97,25 @@ function editProduct(proId) {
     window.location.href = contextPath + '/admin/editProduct.jsp?proId=' + proId;
 }
 
+function changeImage(){
+    event.preventDefault();
+    var imgInput = $('#image_input');
+    var imageBox = $('#image_box');
+    imageBox.addClass('hidden');
+    imgInput.removeClass('hidden');
+    imgInput.addClass('active');
+}
+
+function cancelImageChange(){
+    event.preventDefault();
+    var imgInput = $('#image_input');
+    var imageBox = $('#image_box');
+    imgInput.removeClass("active");
+    imgInput.addClass("hidden");
+    imageBox.removeClass("hidden");
+    imageBox.addClass("active");    
+}
+
 function updateProduct(){
     event.preventDefault();
     var formData = $("#editProductForm").serialize();

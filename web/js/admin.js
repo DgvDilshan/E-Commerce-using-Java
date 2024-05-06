@@ -49,5 +49,31 @@ $(document).ready(function() {
 
 var editMode = false;
 
+function addProduct(){
+    event.preventDefault();
+    var formData = new FormData($('#addProductForm')[0]);
+    
+    var fileInput = $('#pro_img')[0];
+    var fileName = "";
+    if (fileInput.files.length > 0) {
+        fileName = fileInput.files[0].name;
+    } else {
+        console.log("No file selected");
+    }
 
+    formData.append('pro_img', fileName);
+
+    $.ajax({
+        type: "POST",
+        url: contextPath + "/AddProductServlet",
+        data: formData,
+        processData: false,
+        contentType: false,
+        success: function(response) {
+            $("#loadingIndicator").hide();
+            alert(response);
+        }
+    });
+    return false;
+}
 

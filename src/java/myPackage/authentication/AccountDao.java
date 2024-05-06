@@ -160,24 +160,7 @@ public class AccountDao {
         
         return rowUpdated;
     }
-   
-//    public boolean updateShippingAddress(Account account) throws SQLException {
-//        boolean rowUpdated;
-//        System.out.println("hi this is Dao");
-//
-//        try (Connection connection = DbUtil.getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_SHIPPING_ADDRESS);) {
-//            statement.setString(1, account.getShipping_name());
-//            statement.setString(2, account.getShipping_phone());
-//            statement.setString(3, account.getShipping_address());
-//            statement.setInt(4, account.getUser_id());
-//
-//            System.out.println("hi this is dao after seting values");
-//            rowUpdated = statement.executeUpdate() > 0;
-//            System.out.println("hi this is after raw update");
-//        }
-//        return rowUpdated;
-//    }
-
+    
     public List<Order> selectAllOrders(int user_id) {
         List<Order> myorders = new ArrayList<>();
         try (Connection connection = DbUtil.getConnection();

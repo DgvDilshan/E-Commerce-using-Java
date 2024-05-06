@@ -54,5 +54,14 @@
         <rtexprvalue>true</rtexprvalue>
         <type>java.lang.String</type>
     </attribute>
+<<<<<<< HEAD
+=======
+    <attribute>
+        <name>id</name>
+        <required>false</required>
+        <rtexprvalue>true</rtexprvalue>
+        <type>java.lang.String</type>
+    </attribute>
+>>>>>>> 33633ac5da06e0a36570eb21591345b66ff7f554
   </tag>
 </taglib>

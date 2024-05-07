@@ -13,7 +13,11 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+<<<<<<< HEAD
+   <link rel="stylesheet" type="text/css" href="css/shopbycategories.css"
+=======
   <link rel="stylesheet" type="text/css" href="css/contactus.css" />
+>>>>>>> 33633ac5da06e0a36570eb21591345b66ff7f554
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,4 +56,60 @@
     crossorigin="anonymous"
   ></script>
   <script src="js/index.js"></script>
-</body>
+  
+    <section class="categories" id="categories">
+        <h2 class="heading">Shop by Categories</h2>
+        <div class="box-container">
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\a.png" alt="">
+                </a>
+                <h6>Golf Clubs</h6>
+                
+            </div>
+
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\b.png" alt="">
+                </a>
+                <h6>Golf Balls</h6>
+                
+            </div>
+
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\c.png" alt="">
+                </a>
+                <h6>Golf Bags</h6>
+                
+            </div>
+
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\d.png" alt="">
+                </a>
+                <h6>Clohing & Rainwear</h6>
+                
+            </div>
+
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\e.png" alt="">
+                </a>
+                <h6>Footwear</h6>
+                
+            </div>
+
+            <div class="box">
+                <a href="default.asp">
+                <img src="assets\shopcategories\f.png" alt="">
+                </a>
+                <h6>Accessories</h6>
+                
+            </div>
+        </div>
+    </section>
+  
+        
+    </body>
+

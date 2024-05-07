@@ -1,0 +1,67 @@
+  body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .categories {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for responsiveness */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box {
+            border: 0px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        
+       
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+       
+
+        .box h6 {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+            white-space: nowrap; /* Ensure heading stays in one line */
+        }
+
+        @media screen and (min-width: 768px) { /* Adjust for desktop view */
+            .box-container {
+                grid-template-columns: repeat(3, 1fr); /* Display three columns */
+            }
+        }
+
+        @media screen and (max-width: 767px) { /* Adjust for mobile view */
+            .box-container {
+                grid-template-columns: repeat(2, 1fr); /* Display two columns */
+            }
+
+            .heading {
+                font-size: 20px; /* Reduce font size for mobile view */
+                margin-top: 10px; /* Add smaller margin for mobile view */
+                display: block; /* Reset display to block */
+                white-space: normal; /* Allow heading to wrap */
+                overflow: hidden; /* Hide overflow */
+                text-overflow: ellipsis; /* Display ellipsis for overflow text */
+                max-height: 3.2em; /* Set maximum height for two lines of text */
+                line-height: 1.6em; /* Set line height */
+            }
+        }
+ 

@@ -139,7 +139,7 @@ function signOut() {
  $(document).ready(function() {
     function fetchCartItemsAndUpdateTotal() {
         $.ajax({
-            url: 'CartServlets',
+            url: 'CartServlet',
             type: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -225,7 +225,7 @@ function signOut() {
     
     function fetchOrderSummary(){
         $.ajax({
-            url: 'OrderSummaryServlets',
+            url: 'OrderSummaryServlet',
             type: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -289,7 +289,7 @@ function signOut() {
     
     function fetchContactInformation() {
         $.ajax({
-            url: 'ContactInformations',
+            url: 'ContactInformation',
             type: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -310,7 +310,7 @@ function signOut() {
     
     function fetchAddressInformation(){
         $.ajax({
-            url: 'AddressInfoServlets',
+            url: 'AddressInfoServlet',
             type: 'GET',
             dataType: 'json',
             success: function(data){
@@ -332,7 +332,7 @@ function signOut() {
 
     function fetchOrderComplete() {
     $.ajax({
-        url: 'OrderCompleteServlets',
+        url: 'OrderCompleteServlet',
         type: 'GET',
         dataType: 'json',
         success: function(data) {
@@ -417,7 +417,7 @@ function sendData() {
     
     console.log(JSON.stringify(cartItems));
     $.ajax({
-        url: contextPath + '/CartDetailsServlets',
+        url: contextPath + '/CartDetailsServlet',
         type: 'POST',
         data: {
             total_price: total,
@@ -455,7 +455,7 @@ function sendCheckoutData(){
     var paymentMethod = $('input[name=payment-method]:checked').val();
     
     $.ajax({
-        url: 'CheckoutDetailsServlets',
+        url: 'CheckoutDetailsServlet',
         type: 'POST',
         data: {
             firstName: firstName,

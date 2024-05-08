@@ -90,7 +90,7 @@
     </servlet>
     <servlet>
         <servlet-name>AddressInfoServlets</servlet-name>
-        <servlet-class>myPackage.cart.AddressInfoServlets</servlet-class>
+        <servlet-class>myPackage.cart.AddressInfoServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AddressItem</servlet-name>

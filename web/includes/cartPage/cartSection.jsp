@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="b" uri="/WEB-INF/tlds/buttonTags" %>
 <section class="cart-section">
     <div class="container">
         <div class="cart-section-wrapper">

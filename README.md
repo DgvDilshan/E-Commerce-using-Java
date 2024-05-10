@@ -123,7 +123,8 @@ Member 03
 •	Having problems with the Git repository, we decided to set up a new repository and transferred the files to it, ensuring the project continued uninterrupted
   change the my part of new repository
 
-2024-04-30<br>
+2024-04-30
+<br>
 •	discussed with group members and divided the page , i'am selected cart section in web page <br>
 •	create the repo and start  the creating web project. <br>
 •	create the cart page in cart.jsp page <br>
@@ -132,11 +133,14 @@ Member 03
 •	start the backend part in cart section <br> 
 
 2024-04-01 <br>
+
+
 •	create the servlet and connected the backend part but display the error this part<br>
 •	search the fix this error support the use AI , no solution the fix error part <br>
 •	I try the resold the error <br>
 •	I change the NetBeans version and try this but not completed<br>
 2024-05-02<br>
+
 
 •	Finish the my part in web project 
 

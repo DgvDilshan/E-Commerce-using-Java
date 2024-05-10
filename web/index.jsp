@@ -42,6 +42,152 @@
             </div>
         </div>
     </header>
+        
+        <!------------feature products-------------->
+        
+        <section class="shop-index">
+            <div class="container">
+                <h2 class="pro-title">Feature Products</h2>
+                <div class="row mt-5" id="productGrid"> 
+                <!--pro-box 1-->
+                <div class="col-md-3 mb-5">
+                        <a href="#" class="pro-card-wrapper">
+                            <div class="pro-card">
+                                <div class="pro-card-img">
+                                    <div class="pro-add-to-cart">
+                                        <form id="addToCartForm" method="POST">
+                                            <input type="hidden" name="pro_id" value="1" id="pro_id" />
+                                            <input type="hidden" name="quantity" value="1" id="quantity" />
+                                            <input type="hidden" name="sub_total" value="199.10" id="sub_total" />
+                                            <div id="add-to-cart">
+                                                <b:Button text="Add To Cart" rounded="false" outlined="false" onclick="addToCart()"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="new">new</div>
+                                    <div class="discount">-50%</div>
+                                    <button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>
+                                    <img class="img-fluid mb-3" src="assets/Elements/product1.png" alt="" />
+                                </div>
+                                <div class="pro-card-details">
+                                    <div class="rating">
+                                       <img src="assets/icons/star.png" />
+                                    </div>
+                                    <h2>Loveseat Sofa</h2>
+                                    <div class="prices">
+                                       <span class="discount-price">$200.00</span>
+                                       <span class="price"><s>$400.00</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                <!--pro-box 2-->
+                <div class="col-md-3 mb-5">
+                        <a href="#" class="pro-card-wrapper">
+                            <div class="pro-card">
+                                <div class="pro-card-img">
+                                    <div class="pro-add-to-cart">
+                                        <form id="addToCartForm" method="POST">
+                                            <input type="hidden" name="pro_id" value="1" id="pro_id" />
+                                            <input type="hidden" name="quantity" value="1" id="quantity" />
+                                            <input type="hidden" name="sub_total" value="199.10" id="sub_total" />
+                                            <div id="add-to-cart">
+                                                <b:Button text="Add To Cart" rounded="false" outlined="false" onclick="addToCart()"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="new">new</div>
+                                    <div class="discount">-50%</div>
+                                    <button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>
+                                    <img class="img-fluid mb-3" src="assets/Elements/product12.png" alt="" />
+                                </div>
+                                <div class="pro-card-details">
+                                    <div class="rating">
+                                       <img src="assets/icons/star.png" />
+                                    </div>
+                                    <h2>Pink Pillow</h2>
+                                    <div class="prices">
+                                       <span class="discount-price">$3.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                <!--pro-box 3-->
+                <div class="col-md-3 mb-5">
+                        <a href="#" class="pro-card-wrapper">
+                            <div class="pro-card">
+                                <div class="pro-card-img">
+                                    <div class="pro-add-to-cart">
+                                        <form id="addToCartForm" method="POST">
+                                            <input type="hidden" name="pro_id" value="1" id="pro_id" />
+                                            <input type="hidden" name="quantity" value="1" id="quantity" />
+                                            <input type="hidden" name="sub_total" value="199.10" id="sub_total" />
+                                            <div id="add-to-cart">
+                                                <b:Button text="Add To Cart" rounded="false" outlined="false" onclick="addToCart()"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="new">new</div>
+                                    <div class="discount">-50%</div>
+                                    <button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>
+                                    <img class="img-fluid mb-3" src="assets/Elements/product3.png" alt="" />
+                                </div>
+                                <div class="pro-card-details">
+                                    <div class="rating">
+                                       <img src="assets/icons/star.png" />
+                                    </div>
+                                    <h2>Table Lamp</h2>
+                                    <div class="prices">
+                                       <span class="discount-price">$7.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                <!--pro-box 4-->
+                <div class="col-md-3 mb-5">
+                        <a href="#" class="pro-card-wrapper">
+                            <div class="pro-card">
+                                <div class="pro-card-img">
+                                    <div class="pro-add-to-cart">
+                                        <form id="addToCartForm" method="POST">
+                                            <input type="hidden" name="pro_id" value="1" id="pro_id" />
+                                            <input type="hidden" name="quantity" value="1" id="quantity" />
+                                            <input type="hidden" name="sub_total" value="199.10" id="sub_total" />
+                                            <div id="add-to-cart">
+                                                <b:Button text="Add To Cart" rounded="false" outlined="false" onclick="addToCart()"/>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="new">new</div>
+                                    <div class="discount">-50%</div>
+                                    <button class="add-to-wishlist"><img src="assets/icons/wishlist.png" /></button>
+                                    <img class="img-fluid mb-3" src="assets/Elements/product4.png" alt="" />
+                                </div>
+                                <div class="pro-card-details">
+                                    <div class="rating">
+                                       <img src="assets/icons/star.png" />
+                                    </div>
+                                    <h2>Family Sofa</h2>
+                                    <div class="prices">
+                                       <span class="discount-price">$189.99</span>
+                                       <span class="price"><s>$369.90</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Show more btn-->
+                    <button class="shm-btn">Show More</button>                  
+                </div>
+            </div>
+        </section>
+        
        <%@include file="includes/newsletter.jsp" %>
        <%@include file="includes/footer.jsp" %>
        

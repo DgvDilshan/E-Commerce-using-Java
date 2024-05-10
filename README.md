@@ -123,15 +123,15 @@ Member 03
 •	Having problems with the Git repository, we decided to set up a new repository and transferred the files to it, ensuring the project continued uninterrupted
   change the my part of new repository
 
-2024-04-30
-•	discussed with group members and divided the page , i'am selected cart section in web page
-•	create the repo and start  the creating web project. 
-•	create the cart page in cart.jsp page 
-•	create the checkout and paypalinfo section are in my web project 
-•	adding the js part and style the frontend  
-•	start the backend part in cart section 
+2024-04-30<br>
+•	discussed with group members and divided the page , i'am selected cart section in web page <br>
+•	create the repo and start  the creating web project. <br>
+•	create the cart page in cart.jsp page <br>
+•	create the checkout and paypalinfo section are in my web project <br>
+•	adding the js part and style the frontend  <br>
+•	start the backend part in cart section <br> 
 
-2024-04-01 
+2024-04-01 <br>
 •	create the servlet and connected the backend part but display the error this part
 •	search the fix this error support the use AI , no solution the fix error part 
 •	I try the resold the error 

@@ -108,9 +108,9 @@ Member 03
 •	clone the  web project and discussed with group members and divided the page , i'am selected the signup page and signin page
 
 2024-04-17  
-•	Create the sginup.jsp page and create the signup page in using the css and js and create the signup.css style sheet and sum  styles are adding 
+•	Create the sginup.jsp page and create the signup page in using the css and js and create the signup.css style sheet and sum  styles are adding <br>
 
-2024-04-18 
+2024-04-18 <br>
 •	Create the Siginup.jsp page and create the signup page in using the css and js add in the parts in page
 
 2024-04-20  
@@ -132,11 +132,11 @@ Member 03
 •	start the backend part in cart section <br> 
 
 2024-04-01 <br>
-•	create the servlet and connected the backend part but display the error this part
-•	search the fix this error support the use AI , no solution the fix error part 
-•	I try the resold the error 
-•	I change the NetBeans version and try this but not completed
-2024-05-02
+•	create the servlet and connected the backend part but display the error this part<br>
+•	search the fix this error support the use AI , no solution the fix error part <br>
+•	I try the resold the error <br>
+•	I change the NetBeans version and try this but not completed<br>
+2024-05-02<br>
 
 •	Finish the my part in web project 
 

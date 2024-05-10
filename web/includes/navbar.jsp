@@ -225,7 +225,7 @@
       </a>
 
       <a href="" class="action-wrapper">
-        <span> Wishlist </span>
+          <span>Wishlist</span>
 
         <div class="action-icon">
           <svg

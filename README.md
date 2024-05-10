@@ -129,7 +129,7 @@ Member 03
 •	start the backend part in cart section 
 
 2024-04-01 
-•	create the servlet and connected the backend part but creating the error this part
+•	create the servlet and connected the backend part but display the error this part
 •	search the fix this error support the use AI , no solution the fix error part 
 •	I try the resold the error 
 •	I change the NetBeans version and try this but not completed

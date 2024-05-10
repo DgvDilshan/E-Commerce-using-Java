@@ -1,8 +1,8 @@
 
 <h1 align="center"> Diary of group Members </h1>
 
-Member 1
-Student Id: 28652
+Member 1 <br>
+Student Id: 28652 <br>
 
 April 11th, 2024:
 Completed my account view.
@@ -48,8 +48,8 @@ My responsibility of the project was to develop authentication, user profile man
 ****************************************************************************************************************
 
 
-Member 2
-Student Id: 28365
+Member 2 <br>
+Student Id: 28365 <br>
 
 April 10th, 2024: 
 Started the project
@@ -101,8 +101,8 @@ As part of my work on our e-commerce application, I've taken on the task of crea
 ************************************************************************************************************
 
 
-Member 03 
-28203
+Member 03  <br>
+28203 <br>
 
 2024-04-03  
 •	clone the  web project and discussed with group members and divided the page , i'am selected the signup page and signin page
@@ -155,8 +155,8 @@ Contribution
 ***************************************************************************************************************************
 
 
-Member 4 
-Student Id: 28227
+Member 4  <br>
+Student Id: 28227 <br>
 
 April 11th 2024:
 Created new branch, feature-contactus.
@@ -198,8 +198,8 @@ A flawless user experience was my main responsibility while developing our e-com
 *******************************************************************************************************************************
 
 
-Member 05
-Student ID: 28404
+Member 05  <br>
+Student ID: 28404  <br>
 
 April 15th, 2024:
 Today, I started by cloning my repository, setting the stage for the upcoming developments in our project.
@@ -256,8 +256,8 @@ CONCLUSION
 *****************************************************************************************************************************************
 
 
-Member 6
-Student Id: 28445
+Member 6  <br>
+Student Id: 28445  <br>
 
 April 18th, 2024: 
 Started the project
@@ -297,8 +297,8 @@ The diary entries outline a comprehensive journey encompassing both frontend and
 
 
 
-Member 08
-Student Id: 26649
+Member 08  <br>
+Student Id: 26649  <br>
 
 May 5th 2024 :
 Started the project and clone the repository. 
@@ -323,8 +323,8 @@ As part of my development of our e-commerce application,. focused on enhancing t
 *********************************************************************************************************************************************
 
 
-Member 9
-Student id – 28548
+Member 9  <br>
+Student id – 28548  <br>
 
 April 16th, 2024: 
 I got the project underway.
@@ -363,8 +363,8 @@ I have taken on the duty of designing the frontend elements of the Product detai
 ********************************************************************************************************************************************************
 
 
-Member 10
-Student Id: 28211
+Member 10  <br>
+Student Id: 28211  <br>
 
 May 5th 2024 :
 Started the project and clone the repository. 

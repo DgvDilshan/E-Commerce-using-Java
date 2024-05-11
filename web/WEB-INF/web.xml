@@ -20,6 +20,14 @@
         <servlet-name>AddressInfoServlet</servlet-name>
         <servlet-class>myPackage.cart.AddressInfoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MyWishlistServlet</servlet-name>
+        <servlet-class>myPackage.authentication.MyWishlistServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveFromWishlistServlet</servlet-name>
+        <servlet-class>myPackage.authentication.RemoveFromWishlistServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
@@ -40,10 +48,17 @@
         <servlet-name>AddressInfoServlet</servlet-name>
         <url-pattern>/AddressInfoServlet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MyWishlistServlet</servlet-name>
+        <url-pattern>/MyWishlistServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveFromWishlistServlet</servlet-name>
+        <url-pattern>/RemoveFromWishlistServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    
 </web-app>

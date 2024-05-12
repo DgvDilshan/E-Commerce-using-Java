@@ -3,10 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/pc/OneDrive/Desktop/E-Commerce-using-Java/web/js/index.js</file>
-            <file>file:/C:/Users/pc/OneDrive/Desktop/E-Commerce-using-Java/web/css/cartsidebar.css</file>
-            <file>file:/C:/Users/pc/OneDrive/Desktop/E-Commerce-using-Java/web/js/cartsidebar.js</file>
-            <file>file:/C:/Users/pc/OneDrive/Desktop/E-Commerce-using-Java/web/includes/cartsidebar.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/admin/index.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/js/cart.js</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/src/java/myPackage/admin/CategoriesServlet.java</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/includes/admin/categoriesSection.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/js/admin.js</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/src/java/myPackage/admin/Category.java</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/js/shop.js</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/admin/categories.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/js/index.js</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/admin/editProduct.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/index.jsp</file>
+            <file>file:/C:/Users/pc/OneDrive/Desktop/out%20project/E-Commerce-using-Java/web/WEB-INF/web.xml</file>
         </group>
     </open-files>
 </project-private>

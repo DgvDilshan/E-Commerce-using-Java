@@ -19,7 +19,7 @@
         <%@include file="../includes/admin/sidebar.jsp" %>
         
         <main class="page-content" id="page-content">
-            <%@include file="../includes/admin/categories.jsp" %>
+            <%@include file="../includes/admin/categoriesSection.jsp" %>
         </main>
         
 

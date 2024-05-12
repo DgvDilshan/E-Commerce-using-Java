@@ -33,22 +33,6 @@
         <servlet-class>myPackage.admin.AddProductServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>AddCategoryServlet</servlet-name>
-        <servlet-class>myPackage.admin.AddCategoryServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CategoriesServlet</servlet-name>
-        <servlet-class>myPackage.admin.CategoriesServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>GetCategoryServlet</servlet-name>
-        <servlet-class>myPackage.admin.GetCategoryServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>updateCategoryServlet</servlet-name>
-        <servlet-class>myPackage.admin.UpdateCategoryServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>RemoveCategiryServlet</servlet-name>
         <servlet-class>myPackage.admin.RemoveCategoryServlet</servlet-class>
     </servlet>
@@ -100,6 +84,26 @@
         <servlet-name>ShopServlet</servlet-name>
         <servlet-class>myPackage.shop.ShopServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.AddCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <servlet-class>myPackage.admin.CategoriesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>myPackage.admin.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.GetCategoryServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <servlet-class>myPackage.admin.UpdateCategoryServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/CartServlet</url-pattern>
@@ -131,22 +135,6 @@
     <servlet-mapping>
         <servlet-name>AddProductServlet</servlet-name>
         <url-pattern>/AddProductServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AddCategoryServlet</servlet-name>
-        <url-pattern>/AddCategoryServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CategoriesServlet</servlet-name>
-        <url-pattern>/CategoriesServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>GetCategoryServlet</servlet-name>
-        <url-pattern>/GetCategoryServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>updateCategoryServlet</servlet-name>
-        <url-pattern>/updateCategoryServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RemoveCategiryServlet</servlet-name>
@@ -199,6 +187,26 @@
     <servlet-mapping>
         <servlet-name>ShopServlet</servlet-name>
         <url-pattern>/ShopServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddCategoryServlet</servlet-name>
+        <url-pattern>/AddCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <url-pattern>/CategoriesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCategoryServlet</servlet-name>
+        <url-pattern>/GetCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateCategoryServlet</servlet-name>
+        <url-pattern>/UpdateCategoryServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

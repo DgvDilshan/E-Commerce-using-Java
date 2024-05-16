@@ -7,7 +7,7 @@
                       </div>
                     <div class="card-body">
                       <div class="border p-3 rounded">
-                      <form id="addProductForm" class="row g-3" enctype="multipart/form-data">
+                      <form id="addProductForm" class="row g-3" action="AddProductServlet" method="POST" enctype="multipart/form-data">
                         <div class="col-12">
                           <label class="form-label">Product title</label>
                           <input type="text" class="form-control" placeholder="Product title" name="pro_name">
@@ -46,7 +46,8 @@
                           </div>
                         </div>
                         <div class="col-12">
-                           <b:Button text="Add Product" rounded="false" outlined="false" onclick="addProduct()" id="proBtn"/>
+                            <input class="btn" type="submit"/>
+                           <!--b:Button text="Add Product" rounded="false" outlined="false" onclick="addProduct()" id="proBtn"/>-->
                         </div>
                       </form>
                       </div>
